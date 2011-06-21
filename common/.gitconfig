@@ -1,0 +1,28 @@
+[user]
+        name = Chris Walquist
+        email = chris@walquist.net
+[merge]
+        tool = gvimdiff
+[alias]
+        co = checkout
+        br = branch -v
+        ci = commit -a
+        unstage = reset HEAD --
+        last = log -1 HEAD
+        visual = !gitk
+        d = diff
+        a = add
+        b = branch
+        m = checkout master
+        cl = config -l
+        s = status
+        rmb = branch -d
+        h = help
+        l = config -l
+        sh = show
+        f = fetch
+        p = pull
+        pom = push origin master
+[core]
+        excludesfile = ~/.gitexclude
+[branch "master"]
