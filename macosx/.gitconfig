@@ -1,0 +1,39 @@
+[user]
+  name = Chris Walquist
+  email = chris@walquist.net
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[alias]
+  br = branch
+  changes = diff --name-status -r
+  ci = commit
+  co = checkout
+  diffstat = diff --stat -r
+  l = log --abbrev-commit --pretty=oneline --graph --decorate
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  recent = log --max-count=5
+  serve = !git daemon --reuseaddr --verbose  --base-path=. --export-all ./.git
+  st = status
+[diff]
+  renames = true
+[receive]
+  denyCurrentBranch = warn
+ 
+[core]
+	excludesfile = /Users/walquis/.gitignore_global
+  #autocrlf = true
+  #safecrlf = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[gui]
+	recentrepo = /Users/walquis/dths/git-svn.dths_rails
