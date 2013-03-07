@@ -12,7 +12,7 @@
         co = checkout
         d = diff
         f = fetch
-        h = log --pretty=format:\"%h %ad | %s%d\" --graph --date=short
+	h = log --pretty=format:\"%h %ad | %s%d\" --graph --date=short
         l = config -l
         last = log -1 HEAD
         m = checkout master
