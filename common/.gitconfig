@@ -4,25 +4,26 @@
 [merge]
         tool = gvimdiff
 [alias]
-        co = checkout
-        br = branch -v
-        ci = commit -a
-        unstage = reset HEAD --
-        last = log -1 HEAD
-        visual = !gitk
-        d = diff
         a = add
         b = branch
-        m = checkout master
+        br = branch -v
+        ci = commit -a
         cl = config -l
-        s = status
-        rmb = branch -d
+        co = checkout
+        d = diff
+        f = fetch
         h = help
         l = config -l
-        sh = show
-        f = fetch
+        last = log -1 HEAD
+        m = checkout master
         p = pull
         pom = push origin master
+        rmb = branch -d
+        s = status
+        sh = show
+        st = status
+        unstage = reset HEAD --
+        visual = !gitk
 [core]
         excludesfile = ~/.gitexclude
 [branch "master"]
