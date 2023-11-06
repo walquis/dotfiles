@@ -18,8 +18,6 @@ alias c="cd $DTHS_DIR; pwd"
 alias rs="cd $DTHS_DIR; bundle exec rails server"
 alias rc="cd $DTHS_DIR; bundle exec rails console"
 #alias nj="cd $DTHS_DIR/vendor/plugins/juggernaut; node server.js"
-alias jug="juggernaut > /tmp/juggernaut.log 2>&1 & "
-alias rd="cd ~/dev/redis-2.0.3; ./redis-server redis.conf"
 
 # Show exit code in prompt if not zero.
 export PS1='%h %n@%m:%~%(?..[%?]) %(!.#.$) '

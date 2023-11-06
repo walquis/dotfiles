@@ -1,3 +1,5 @@
+alias cdg="cd ~/src/git-classes/dba-git" # Current git class's toplevel.
+
 alias  dog='git log       --decorate --oneline --graph' # Git history, from current branch
 alias adog='git log --all --decorate --oneline --graph' # Git history
 alias gh2='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short' # Git history
@@ -9,6 +11,8 @@ alias addog='git log --all --decorate --oneline --graph --pretty=format:"%C(yell
 alias adddog='git log --all --decorate --oneline --graph --pretty=format:"%C(yellow)%h%Creset %C(magenta)%cl%Creset%C(red)%C(bold)%d%Creset %C(cyan)%cd%Creset %s" --date=format:"%y-%m%d-%H%M"'
 
 alias gs="git status"
+alias gsh="git show"
+alias gshc="git show --compact-summary"
 alias gsm="git submodule"
 alias gsmu="git submodule update"
 alias gsms="git submodule status"

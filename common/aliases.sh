@@ -20,7 +20,9 @@ alias kex="kubectl exec"
 alias ka="kubectl apply"
 alias kdel="kubectl delete"
 alias kx="kubectx"
+alias kxc="kubectx -c"
 alias kn="kubens"
+alias knc="kubens -c"
 alias kal="kubectl get all"
 alias kgp="kubectl get pod"
 alias kge="kubectl get events"
@@ -38,7 +40,6 @@ alias l='ls -lrt'
 alias gril='grep -ril --exclude-dir=vendor --exclude-dir=.git --exclude-dir=node_modules --exclude-dir=venv --exclude-dir=_site'
 
 alias d="docker"
-alias f="echo goodbye there"
 alias cdc="cd ~/src/ap/curriculum"
 alias cb="cd ~/src/git-classes/git-basics-team-project/thebook"
 alias dstop='docker stop $(docker ps | tail -1 | rev | cut -d'\'' '\'' -f1 | rev)'
