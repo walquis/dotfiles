@@ -1,8 +1,9 @@
 alias cdg="cd ~/src/git-classes/dba-git" # Current git class's toplevel.
 
-alias  dog='git log       --decorate --oneline --graph' # Git history, from current branch
-alias adog='git log --all --decorate --oneline --graph' # Git history
-alias gh2='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short' # Git history
+alias  dog='git log       --decorate --oneline --graph --not origin/gh-pages' # Git history, from current branch
+alias adog='git log --all --decorate --oneline --graph' # Git history, all branches
+alias adogp='git log --all --decorate --oneline --graph --not origin/gh-pages' # Git history, not gh-pages
+alias gh2='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short --not origin/gh-pages' # Git history
 
 # Include commit dates
 alias addog='git log --all --decorate --oneline --graph --pretty=format:"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)%cd%Creset %s" --date=format:"%y-%m%d-%H%M"' # Git history
@@ -27,10 +28,13 @@ alias guc='git commit -a --amend --no-edit'
 
 alias gl='git config -l'
 alias gds='git diff --staged'
+alias gr='git remote'
 alias grv='git remote -v'
+alias gls='git ls-remote'
 alias grsu='git remote set-url --add'
 alias grso="git remote show origin"
 alias gp='git push'
+alias gpf='git push -f'
 
 alias gc='git commit'
 alias gd='git diff'
@@ -40,8 +44,8 @@ alias gco='git checkout'
 alias gcom='git checkout main'
 alias gb='git branch'
 
-alias gril='grep -ril --exclude-dir=.git --exclude-dir=vendor --exclude-dir=public/assets --exclude-dir=node_modules --exclude-dir=Pods --exclude-dir=build'
 alias grh='git reset --hard'
 alias grm='git reset --mixed'
 alias grs='git reset --soft'
 alias grph='git rev-parse HEAD'
+alias gf='git fetch'
